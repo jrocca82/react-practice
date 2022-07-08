@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from "./logo.svg";
+import Table from "./components/CoinTable/Table";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
+        <img src={logo} alt="logo" className="App-logo"/>
+        <h1 className="App-title">
           Coin Exchange
         </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <main>
+        <Table />
+      </main>
     </div>
   );
 }
